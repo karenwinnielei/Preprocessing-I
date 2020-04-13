@@ -53,7 +53,9 @@ table {
 
 @mainFont: 'Roboto', sans-serif;
 @headingFont: 'Baloo Paaji 2', cursive;
-@mainBackground: #darkgray;
+@mainBackground: darkgray;
+@fontColor: dimgray;
+@accentColor: deepskyblue;
 
 .column(){
 	display: flex;
@@ -84,14 +86,17 @@ body{
 h1, h2, h3{
 	font-family: @headingFont;
 	text-align: center;
+	color: @accentColor;
 }
 
 h1{
 	font-size: 8rem;
+	color: white;
 }
 
 h2{
 	font-size: 4rem;
+	color: whitesmoke
 }
 
 h3{
@@ -117,23 +122,25 @@ a{
 header{
 	font-family: @headingFont;
 	width: 100%;
-	background: @mainBackground;
+	background-color: @mainBackground;
 
 	nav{
 		display: flex;
 		justify-content: space-evenly;
 		padding: 2%;
+
+		a{
+			color: gainsboro;
+		}// this closes a
 	}// this closes nav
 	.textContainer{
 		padding: 2%;
+
 	}// this closes textContainer
-	h1{
-		padding: 1%;
-	}// this closes h1
 }// this closes header
 
 .content{
-	width: 90%;
+	width: 80%;
 	display: flex;
 	justify-content: center;
 	margin: 2%;
@@ -145,14 +152,22 @@ header{
 
 		.textContainer{
 			padding: 0 2%;
-		}
+
+			h3{
+				padding: 4%;
+			}// this closes h3
+		}// this closes .textContainer
 
 	}// this closes .leftDiv
 
 	.rightDiv{
 		width: 75%;
+		padding: 1%;
 		.column();
 
+		table{
+			margin: 4%;
+		}
 		td, th{
 			text-align: left;
 			padding: 1%;
@@ -163,10 +178,17 @@ header{
 		}// this closes th
 
 		.contact{
+			padding: 4%;
+
+			h3{
+				padding: 4%;
+			}
+
 			p{
 				line-height: 1.4;
+				text-align: center;
 			}
-		}
+		}// this closes .contact
 	}// this closes .rightDiv
 
 }// this closes .content

@@ -161,12 +161,15 @@ h2,
 h3 {
   font-family: 'Baloo Paaji 2', cursive;
   text-align: center;
+  color: deepskyblue;
 }
 h1 {
   font-size: 8rem;
+  color: white;
 }
 h2 {
   font-size: 4rem;
+  color: whitesmoke;
 }
 h3 {
   font-size: 3rem;
@@ -186,21 +189,21 @@ a {
 header {
   font-family: 'Baloo Paaji 2', cursive;
   width: 100%;
-  background: #darkgray;
+  background-color: darkgray;
 }
 header nav {
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
 }
+header nav a {
+  color: gainsboro;
+}
 header .textContainer {
   padding: 2%;
 }
-header h1 {
-  padding: 1%;
-}
 .content {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   margin: 2%;
@@ -214,10 +217,17 @@ header h1 {
 .content .leftDiv .textContainer {
   padding: 0 2%;
 }
+.content .leftDiv .textContainer h3 {
+  padding: 4%;
+}
 .content .rightDiv {
   width: 75%;
+  padding: 1%;
   display: flex;
   flex-direction: column;
+}
+.content .rightDiv table {
+  margin: 4%;
 }
 .content .rightDiv td,
 .content .rightDiv th {
@@ -227,8 +237,15 @@ header h1 {
 .content .rightDiv th {
   font-weight: 600;
 }
+.content .rightDiv .contact {
+  padding: 4%;
+}
+.content .rightDiv .contact h3 {
+  padding: 4%;
+}
 .content .rightDiv .contact p {
   line-height: 1.4;
+  text-align: center;
 }
 .imageContainer {
   display: flex;
