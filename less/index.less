@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	// border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,11 +49,142 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Roboto&display=swap');
+
+@mainFont: 'Roboto', sans-serif;
+@headingFont: 'Baloo Paaji 2', cursive;
+@mainBackground: #darkgray;
+
+.column(){
+	display: flex;
+	flex-direction: column;
+}
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+	// border: 1px solid grey;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+
 }
 
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: @mainFont;
+	font-size: 1.8rem;
+	line-height: 1.4;
+}
+
+h1, h2, h3{
+	font-family: @headingFont;
+	text-align: center;
+}
+
+h1{
+	font-size: 8rem;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+h3{
+	font-size: 3rem;
+}
+
+p{
+	font-family: @mainFont;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.container{
+	.column();
+	align-items: center;
+}
+
+header{
+	font-family: @headingFont;
+	width: 100%;
+	background: @mainBackground;
+
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 2%;
+	}// this closes nav
+	.textContainer{
+		padding: 2%;
+	}// this closes textContainer
+	h1{
+		padding: 1%;
+	}// this closes h1
+}// this closes header
+
+.content{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	margin: 2%;
+
+	.leftDiv{
+		width: 25%;
+		.column();
+		padding: 1%;
+
+		.textContainer{
+			padding: 0 2%;
+		}
+
+	}// this closes .leftDiv
+
+	.rightDiv{
+		width: 75%;
+		.column();
+
+		td, th{
+			text-align: left;
+			padding: 1%;
+		}// this closes td, th
+
+		th{
+			font-weight: 600;
+		}// this closes th
+
+		.contact{
+			p{
+				line-height: 1.4;
+			}
+		}
+	}// this closes .rightDiv
+
+}// this closes .content
+.imageContainer{
+	display: flex;
+	justify-content: center;
+
+	img{
+		width: 200px;
+		border-radius: 15px;
+	}// this closes img
+}// this closes .image
+
+
+footer{
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 2%;
+	}
+}
