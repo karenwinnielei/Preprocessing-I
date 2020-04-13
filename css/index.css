@@ -156,6 +156,12 @@ body {
   font-size: 1.8rem;
   line-height: 1.4;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
 h1,
 h2,
 h3 {
@@ -167,12 +173,22 @@ h1 {
   font-size: 8rem;
   color: white;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
 h2 {
   font-size: 4rem;
   color: whitesmoke;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 h3 {
-  font-size: 3rem;
+  font-size: 2.3rem;
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -180,6 +196,7 @@ p {
 a {
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
 .container {
   display: flex;
@@ -198,6 +215,11 @@ header nav {
 }
 header nav a {
   color: gainsboro;
+}
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 1.4rem;
+  }
 }
 header .textContainer {
   padding: 2%;
@@ -259,4 +281,12 @@ footer nav {
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
+}
+footer nav a {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  footer nav a {
+    font-size: 1.2rem;
+  }
 }

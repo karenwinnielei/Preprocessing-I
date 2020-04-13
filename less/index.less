@@ -81,6 +81,11 @@ body{
 	font-family: @mainFont;
 	font-size: 1.8rem;
 	line-height: 1.4;
+
+	@media(max-width:768px){
+		font-size: 1.6rem;
+		line-height: 1.2;
+	}
 }
 
 h1, h2, h3{
@@ -92,15 +97,21 @@ h1, h2, h3{
 h1{
 	font-size: 8rem;
 	color: white;
+	@media(max-width:768px){
+		font-size: 7rem;
+	}
 }
 
 h2{
 	font-size: 4rem;
-	color: whitesmoke
+	color: whitesmoke;
+	@media(max-width:768px){
+		font-size: 3rem;
+	}
 }
 
 h3{
-	font-size: 3rem;
+	font-size: 2.3rem;
 }
 
 p{
@@ -110,6 +121,7 @@ p{
 a{
 	text-decoration: none;
 	color: black;
+	font-size: 1.6rem;
 }
 
 
@@ -131,6 +143,9 @@ header{
 
 		a{
 			color: gainsboro;
+			@media(max-width:768px){
+				font-size: 1.4rem;
+			}
 		}// this closes a
 	}// this closes nav
 	.textContainer{
@@ -208,5 +223,12 @@ footer{
 		display: flex;
 		justify-content: space-evenly;
 		padding: 2%;
+		
+		a{
+			font-size: 1.4rem;
+			@media(max-width:768px){
+				font-size: 1.2rem;
+			}
+		}
 	}
 }
