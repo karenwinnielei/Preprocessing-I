@@ -1,1 +1,368 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Baloo Paaji 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Paaji 2 Regular'), local('BalooPaaji2-Regular'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dMIFFzbz-QHZUdV9_UGWZuYFI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: 'Baloo Paaji 2', cursive;
+  text-align: center;
+  color: deepskyblue;
+}
+h1 {
+  font-size: 8rem;
+  color: white;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+h2 {
+  font-size: 4rem;
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+h3 {
+  font-size: 2.3rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+li {
+  line-height: 1.4;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  font-family: 'Baloo Paaji 2', cursive;
+  width: 100%;
+  background-color: darkgray;
+  border-bottom: 1px solid black;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header nav a {
+  color: gainsboro;
+}
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.6rem;
+  }
+}
+header .textContainer {
+  padding: 2%;
+}
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 4% 0;
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.content .leftDiv {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 5%;
+}
+@media (max-width: 768px) {
+  .content .leftDiv {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .content .leftDiv {
+    width: 100%;
+  }
+}
+.content .leftDiv .textContainer {
+  padding: 0 2%;
+}
+.content .leftDiv .textContainer h3 {
+  padding: 4%;
+}
+.content .rightDiv {
+  width: 50%;
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .content .rightDiv {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .content .rightDiv {
+    width: 100%;
+  }
+}
+.content .rightDiv table {
+  padding: 4% auto;
+}
+@media (max-width: 500px) {
+  .content .rightDiv table {
+    padding: 0 auto;
+  }
+}
+.content .rightDiv td,
+.content .rightDiv th {
+  text-align: left;
+  padding: 2%;
+}
+@media (max-width: 768px) {
+  .content .rightDiv td,
+  .content .rightDiv th {
+    padding: 3%;
+  }
+}
+.content .rightDiv th {
+  font-weight: 600;
+}
+.content .rightDiv .contact {
+  padding: 4%;
+}
+.content .rightDiv .contact h3 {
+  padding: 4%;
+}
+.content .rightDiv .contact p {
+  line-height: 1.4;
+  text-align: center;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+.imageContainer img {
+  width: 200px;
+  border-radius: 15px;
+}
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+footer nav a {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  footer nav a {
+    font-size: 1.2rem;
+  }
+}
