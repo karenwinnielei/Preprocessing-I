@@ -162,6 +162,13 @@ body {
     line-height: 1.2;
   }
 }
+@media (max-width: 500px) {
+  body {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+}
 h1,
 h2,
 h3 {
@@ -178,6 +185,11 @@ h1 {
     font-size: 7rem;
   }
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
 h2 {
   font-size: 4rem;
   color: whitesmoke;
@@ -187,8 +199,18 @@ h2 {
     font-size: 3rem;
   }
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 h3 {
   font-size: 2.3rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -197,6 +219,9 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+}
+li {
+  line-height: 1.4;
 }
 .container {
   display: flex;
@@ -207,11 +232,19 @@ header {
   font-family: 'Baloo Paaji 2', cursive;
   width: 100%;
   background-color: darkgray;
+  border-bottom: 1px solid black;
 }
 header nav {
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header nav a {
   color: gainsboro;
@@ -221,20 +254,42 @@ header nav a {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.6rem;
+  }
+}
 header .textContainer {
   padding: 2%;
 }
 .content {
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
-  margin: 2%;
+  padding: 4% 0;
+}
+@media (max-width: 500px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .content .leftDiv {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  padding: 1%;
+  padding: 1% 5%;
+}
+@media (max-width: 768px) {
+  .content .leftDiv {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .content .leftDiv {
+    width: 100%;
+  }
 }
 .content .leftDiv .textContainer {
   padding: 0 2%;
@@ -243,18 +298,39 @@ header .textContainer {
   padding: 4%;
 }
 .content .rightDiv {
-  width: 75%;
-  padding: 1%;
+  width: 50%;
+  padding: 1% 5%;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .content .rightDiv {
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .content .rightDiv {
+    width: 100%;
+  }
+}
 .content .rightDiv table {
-  margin: 4%;
+  padding: 4% auto;
+}
+@media (max-width: 500px) {
+  .content .rightDiv table {
+    padding: 0 auto;
+  }
 }
 .content .rightDiv td,
 .content .rightDiv th {
   text-align: left;
-  padding: 1%;
+  padding: 2%;
+}
+@media (max-width: 768px) {
+  .content .rightDiv td,
+  .content .rightDiv th {
+    padding: 3%;
+  }
 }
 .content .rightDiv th {
   font-weight: 600;
